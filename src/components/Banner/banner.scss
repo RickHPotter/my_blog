@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900,100|PT+Sans+Narrow:400,700|Noto+Sans:400,700|Libre+Baskerville:400,700,400italic);
+@import '../../styles/variables';
+
+.hero {
+  width: 100%;
+  background-color: var(--light-primary);
+  border-bottom: var(--primary) 0.1rem solid;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+
+  p {
+    margin-top: 2px;
+  }
+  
+  &--content {
+    font-size: 4rem;
+    line-height: 1.4em;
+    color: #fff;
+    opacity: 1;
+  }
+  
+  &--title {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    background: rgba(#000, 1);
+    padding: 0 1rem;
+    box-decoration-break: clone;
+  }
+  
+  .divider {
+    border: var(--primary) 0.001rem solid;
+  }
+  
+  &--subtitle {
+    line-height: 2em;
+    font-family: var(--regular-font);
+    color: black;
+    
+    padding: 0.07em 1.1rem;
+    box-decoration-break: clone;
+    
+    font-size: 1.4rem;
+  }
+}
