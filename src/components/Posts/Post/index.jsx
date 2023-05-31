@@ -1,17 +1,15 @@
-import './post.scss'
+import "./post.scss";
 
-export const Post = ( { post } ) => {
+export const Post = ({ post }) => {
   return (
-    <div className='post'>
-      <div className="img">
-        <img src="" alt="" />
-      </div>
-      <div className="title">
-        {post.title}
-      </div>
-      <button className="read-more">
-        Read More
-      </button>
+    <div className="post">
+      <img
+        className="post--img"
+        src={`/assets/posts/${post.id}/capa.png`}
+        alt={post.title}
+      />
+      <div className="post--title">{post.title}</div>
+      <button className="post--read-more">Read More</button>
     </div>
-  )
-}
+  );
+};
